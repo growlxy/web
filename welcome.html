@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>welcome</title>
+    <link rel="stylesheet" type="text/css" href="css/left-side-menu.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/left-side-menu.js"></script>
+</head>
+<body>
+<div class="top" style="width: 100%; height: 56px; background-color: #68a1e0"></div>
+<div style="height: 650px; float: left;">
+    <div class="left-side-menu" >
+        <div class="lsm-expand-btn">
+            <div class="lsm-mini-btn">
+                <label>
+                    <input type="checkbox" checked="checked">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="30" />
+                        <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55" />
+                        <path class="line--2" d="M0 50h80" />
+                        <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+        <div class="lsm-container">
+            <div class="lsm-scroll" >
+                <div class="lsm-sidebar">
+                    <ul>
+                        <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息查询</span><i class="my-icon lsm-sidebar-more"></i></a>
+                            <ul>
+                                <li><a href="test.php" target="show"><span>查询学生信息</span></a></li>
+                                <li><a href="select/teacher.html" target="show"><span>查询教师信息</span></a></li>
+                                <li><a href="javascript:;"><span>查询课程信息</span></a></li>
+                                <li><a href="javascript:;"><span>查询院系信息</span></a></li>
+                                <li><a href="javascript:;"><span>查询选课信息</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息录入</span><i class="my-icon lsm-sidebar-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>录入学生信息</span></a></li>
+                                <li><a href="javascript:;"><span>录入教师信息</span></a></li>
+                                <li><a href="javascript:;"><span>录入课程信息</span></a></li>
+                                <li><a href="javascript:;"><span>录入院系信息</span></a></li>
+                                <li><a href="javascript:;"><span>录入选课信息</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息删除</span><i class="my-icon lsm-sidebar-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>删除学生信息</span></a></li>
+                                <li><a href="javascript:;"><span>删除教师信息</span></a></li>
+                                <li><a href="javascript:;"><span>删除课程信息</span></a></li>
+                                <li><a href="javascript:;"><span>删除院系信息</span></a></li>
+                                <li><a href="javascript:;"><span>删除选课信息</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息修改</span><i class="my-icon lsm-sidebar-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>修改学生信息</span></a></li>
+                                <li><a href="javascript:;"><span>修改教师信息</span></a></li>
+                                <li><a href="javascript:;"><span>修改课程信息</span></a></li>
+                                <li><a href="javascript:;"><span>修改院系信息</span></a></li>
+                                <li><a href="javascript:;"><span>修改选课信息</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息浏览</span><i class="my-icon lsm-sidebar-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>浏览学生信息</span></a></li>
+                                <li><a href="javascript:;"><span>浏览教师信息</span></a></li>
+                                <li><a href="javascript:;"><span>浏览课程信息</span></a></li>
+                                <li><a href="javascript:;"><span>浏览院系信息</span></a></li>
+                                <li><a href="javascript:;"><span>浏览选课信息</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>数据报表</span><i class="my-icon lsm-sidebar-more"></i></a>
+                            <ul>
+                                <li><a href="javascript:;"><span>学生信息报表</span></a></li>
+                                <li><a href="javascript:;"><span>教师信息报表</span></a></li>
+                                <li><a href="javascript:;"><span>课程信息报表</span></a></li>
+                                <li><a href="javascript:;"><span>院系信息报表</span></a></li>
+                                <li><a href="javascript:;"><span>选课信息报表</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="content">
+    <iframe id="show" name="show" frameborder="0" style="overflow: visible; width: 68%; height: 650px;" scrolling="no"></iframe>
+</div>
+</body>
+</html>
