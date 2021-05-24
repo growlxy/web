@@ -3,6 +3,16 @@
 <head>
     <meta charset="utf-8">
     <title>welcome</title>
+    <style rel="stylesheet" type="text/css">
+        .top-text{
+            font-size: 41px;
+            text-align: center;
+            color: #fff;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 14px;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="css/left-side-menu.css">
     <link rel="stylesheet" type="text/css" href="font/iconfont.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -10,7 +20,11 @@
     <script type="text/javascript" src="js/left-side-menu.js"></script>
 </head>
 <body>
-<div class="top" style="width: 100%; height: 56px; background-color: #68a1e0"></div>
+<div class="top" style="width: 100%; height: 56px; background-color: #68a1e0">
+    <div class="top-text">
+        学生选课管理信息系统
+    </div>
+</div>
 <div style="height: 650px; float: left;">
     <div class="left-side-menu" >
         <div class="lsm-expand-btn">
@@ -41,11 +55,11 @@
                         </li>
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息录入</span><i class="my-icon lsm-sidebar-more"></i></a>
                             <ul>
-                                <li><a href="javascript:;"><span>录入学生信息</span></a></li>
-                                <li><a href="javascript:;"><span>录入教师信息</span></a></li>
-                                <li><a href="javascript:;"><span>录入课程信息</span></a></li>
-                                <li><a href="javascript:;"><span>录入院系信息</span></a></li>
-                                <li><a href="javascript:;"><span>录入选课信息</span></a></li>
+                                <li><a href="insert/student.html" target="show"><span>录入学生信息</span></a></li>
+                                <li><a href="insert/teacher.html" target="show"><span>录入教师信息</span></a></li>
+                                <li><a href="insert/course.html" target="show"><span>录入课程信息</span></a></li>
+                                <li><a href="insert/department.html" target="show"><span>录入院系信息</span></a></li>
+                                <li><a href="insert/sct.html" target="show"><span>录入选课信息</span></a></li>
                             </ul>
                         </li>
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息删除</span><i class="my-icon lsm-sidebar-more"></i></a>
@@ -68,11 +82,11 @@
                         </li>
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息浏览</span><i class="my-icon lsm-sidebar-more"></i></a>
                             <ul>
-                                <li><a href="javascript:;"><span>浏览学生信息</span></a></li>
-                                <li><a href="javascript:;"><span>浏览教师信息</span></a></li>
-                                <li><a href="javascript:;"><span>浏览课程信息</span></a></li>
-                                <li><a href="javascript:;"><span>浏览院系信息</span></a></li>
-                                <li><a href="javascript:;"><span>浏览选课信息</span></a></li>
+                                <li><a href="cheak/student.php" target="show"><span>浏览学生信息</span></a></li>
+                                <li><a href="cheak/teacher.php" target="show"><span>浏览教师信息</span></a></li>
+                                <li><a href="cheak/course.php" target="show"><span>浏览课程信息</span></a></li>
+                                <li><a href="cheak/department.php" target="show"><span>浏览院系信息</span></a></li>
+                                <li><a href="cheak/sct.php" target="show"><span>浏览选课信息</span></a></li>
                             </ul>
                         </li>
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>数据报表</span><i class="my-icon lsm-sidebar-more"></i></a>
@@ -91,7 +105,7 @@
     </div>
 </div>
 <div id="content">
-    <iframe id="show" name="show" frameborder="0" style="overflow: visible; width: 68%; height: 650px;" scrolling="no"></iframe>
+    <iframe id="show" name="show" frameborder="0" style="overflow: visible; width: 68%; height: 1000px;" scrolling="no"></iframe>
 </div>
 </body>
 </html>
