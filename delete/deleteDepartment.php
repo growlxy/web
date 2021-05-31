@@ -11,7 +11,7 @@ if ($_POST) {
     while($row = $result->fetch_assoc()) {
         $del = $row['dno'];
         if ($n == $delete[$m]) {
-            $sql = "delete from student where dno = $del";
+            $sql = "delete from department where dno = $del";
             $conn->query($sql);
             if (count($delete) == ($m+1)) {
                 break;

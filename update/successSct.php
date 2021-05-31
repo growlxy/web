@@ -11,7 +11,7 @@ $tno = $_POST['tno'];
 $grade = $_POST['grade'];
 
 if ($sno && $cno && $tno && $grade){
-    $sql = "update sct set sno = '$sno', cno = '$cno', tno = '$tno', grade = '$grade',
+    $sql = "update sct set sno = '$sno', cno = '$cno', tno = '$tno', grade = '$grade'
  where sno = '$temp'";
     if ($conn->query($sql) === TRUE) {
         echo "修改成功<br>";

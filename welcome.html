@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <title>welcome</title>
     <style rel="stylesheet" type="text/css">
-        .top-text{
+        #login-out {
+            font-size: larger;
+            position: absolute;
+            top: 10%;
+            right: 5%;
+        }
+        .top-text {
             font-size: 41px;
             text-align: center;
             color: #fff;
@@ -15,6 +21,14 @@
     </style>
     <link rel="stylesheet" type="text/css" href="css/left-side-menu.css">
     <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script>
+        function out() {
+            var r = confirm("是否退出？");
+            if (r == true){
+                window.location.href='index.html';
+            }
+        }
+    </script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/left-side-menu.js"></script>
@@ -23,6 +37,11 @@
 <div class="top" style="width: 100%; height: 56px; background-color: #68a1e0">
     <div class="top-text">
         学生选课管理信息系统
+    </div>
+    <div id="login-out">
+        <a onclick="out()">
+            退出
+        </a>
     </div>
 </div>
 <div style="height: 650px; float: left;">
@@ -44,15 +63,6 @@
             <div class="lsm-scroll" >
                 <div class="lsm-sidebar">
                     <ul>
-                        <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息查询</span><i class="my-icon lsm-sidebar-more"></i></a>
-                            <ul>
-                                <li><a href="test.php" target="show"><span>查询学生信息</span></a></li>
-                                <li><a href="select/teacher.html" target="show"><span>查询教师信息</span></a></li>
-                                <li><a href="javascript:;"><span>查询课程信息</span></a></li>
-                                <li><a href="javascript:;"><span>查询院系信息</span></a></li>
-                                <li><a href="javascript:;"><span>查询选课信息</span></a></li>
-                            </ul>
-                        </li>
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息录入</span><i class="my-icon lsm-sidebar-more"></i></a>
                             <ul>
                                 <li><a href="insert/student.html" target="show"><span>录入学生信息</span></a></li>
@@ -74,10 +84,10 @@
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息修改</span><i class="my-icon lsm-sidebar-more"></i></a>
                             <ul>
                                 <li><a href="update/student.php" target="show"><span>修改学生信息</span></a></li>
-                                <li><a href="update/teacher.php"><span>修改教师信息</span></a></li>
-                                <li><a href="update/course.php"><span>修改课程信息</span></a></li>
-                                <li><a href="update/department.php"><span>修改院系信息</span></a></li>
-                                <li><a href="update/sct.php"><span>修改选课信息</span></a></li>
+                                <li><a href="update/teacher.php" target="show"><span>修改教师信息</span></a></li>
+                                <li><a href="update/course.php" target="show"><span>修改课程信息</span></a></li>
+                                <li><a href="update/department.php" target="show"><span>修改院系信息</span></a></li>
+                                <li><a href="update/sct.php" target="show"><span>修改选课信息</span></a></li>
                             </ul>
                         </li>
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>信息浏览</span><i class="my-icon lsm-sidebar-more"></i></a>
@@ -91,11 +101,11 @@
                         </li>
                         <li class="lsm-sidebar-item"><a href="javascript:;"><i class="my-icon lsm-sidebar-icon icon_1"></i><span>数据报表</span><i class="my-icon lsm-sidebar-more"></i></a>
                             <ul>
-                                <li><a href="javascript:;"><span>学生信息报表</span></a></li>
-                                <li><a href="javascript:;"><span>教师信息报表</span></a></li>
-                                <li><a href="javascript:;"><span>课程信息报表</span></a></li>
-                                <li><a href="javascript:;"><span>院系信息报表</span></a></li>
-                                <li><a href="javascript:;"><span>选课信息报表</span></a></li>
+                                <li><a href="table/student.php" target="show"><span>学生信息报表</span></a></li>
+                                <li><a href="table/teacher.php" target="show"><span>教师信息报表</span></a></li>
+                                <li><a href="table/course.php" target="show"><span>课程信息报表</span></a></li>
+                                <li><a href="table/department.php" target="show"><span>院系信息报表</span></a></li>
+                                <li><a href="table/sct.php" target="show"><span>选课信息报表</span></a></li>
                             </ul>
                         </li>
                     </ul>

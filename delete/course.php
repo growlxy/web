@@ -8,7 +8,7 @@ $n = 0;
 
 if ($result->num_rows > 0) {
     // 输出数据
-    echo "<form name=\"cheak\" method=\"post\" action=\"deleteCourse.php.php\">";
+    echo "<form name=\"cheak\" method=\"post\" action=\"deleteCourse.php\">";
     while($row = $result->fetch_assoc()) {
         echo "课程号： " . $row["cno"]. "&nbsp&nbsp课程名： " . $row["cname"]. "&nbsp&nbsp先行课编号： " . $row["cpno"];
         echo "&nbsp&nbsp学分： " . $row["ccredit"];

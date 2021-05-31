@@ -8,7 +8,7 @@ $n = 0;
 
 if ($result->num_rows > 0) {
     // 输出数据
-    echo "<form name=\"cheak\" method=\"post\" action=\"deleteDepartment.php.php\">";
+    echo "<form name=\"cheak\" method=\"post\" action=\"deleteDepartment.php\">";
     while($row = $result->fetch_assoc()) {
         echo "系编号： " . $row["dno"]. "&nbsp&nbsp系名： " . $row["dname"]. "&nbsp&nbsp系主任： " . $row["dmanager"];
         echo "

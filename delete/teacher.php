@@ -8,11 +8,11 @@ $n = 0;
 
 if ($result->num_rows > 0) {
     // 输出数据
-    echo "<form name=\"cheak\" method=\"post\" action=\"deleteTeacher.php.php\">";
+    echo "<form name=\"cheak\" method=\"post\" action=\"deleteTeacher.php\">";
     while($row = $result->fetch_assoc()) {
         echo "教工号： " . $row["tno"]. "&nbsp&nbsp姓名： " . $row["tname"]. "&nbsp&nbsp性别： " . $row["tsex"];
         echo "&nbsp&nbsp年龄： " . $row["tage"]. "&nbsp&nbsp学历：" . $row["teb"];
-        echo "&nbsp&nbsp职称： " . $row["tpt"]. "&nbsp&nbsp主讲课程一：" . $row["cno1"];
+        echo "&nbsp&nbsp职称： " . $row["tpt"]. "<br>主讲课程一：" . $row["cno1"];
         echo "&nbsp&nbsp主讲课程二： " . $row["cno2"]. "&nbsp&nbsp主讲课程三：" . $row["cno3"];
         echo "
                   删除？
