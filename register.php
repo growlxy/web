@@ -23,17 +23,18 @@ if ($name && $password && $repassword){//如果用户名和密码都不为空
         echo '若无响应<br>';
 
         echo '<a href="javascript:;" onclick="window.location.href=\'register.html\';">点此处</a>';
-    }
-    $sql = "insert into user values ('$id', '$name', '$password')";
-    if ($conn->query($sql) === TRUE) {
-        echo '<script>alert("注册成功！")</script>';
-        header("refresh:0;url=index.html");
-        exit;
+    } else {
+        $sql = "insert into user values ('$id', '$name', '$password')";
+        if ($conn->query($sql) === TRUE) {
+            echo '<script>alert("注册成功！")</script>';
+            header("refresh:0;url=index.html");
+            exit;
 //        echo "
 //        <script>
 //        setTimeout(function(){window.location.href='sct.html';},3000);
 //        </script>";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
     }
 }
